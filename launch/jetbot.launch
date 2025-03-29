@@ -1,0 +1,8 @@
+<launch>
+    <!-- 摄像头驱动节点 -->
+    <node name="camera_publisher" pkg="jetbot_line_follower" type = "camera_publisher.py" output="screen" />
+    <!-- 图像处理节点 -->
+    <node name="line_detector" pkg="jetbot_line_follower" type="line_detector.py" output="screen"/>
+    <!-- PID控制节点 -->
+    <node name="pid_controller" pkg="jetbot_line_follower" type="pid_controller.py" output="screen"/>
+</launch>
