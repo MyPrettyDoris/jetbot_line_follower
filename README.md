@@ -30,12 +30,16 @@
     动态调整 PID 参数：
     rosrun rqt_reconfigure rqt_reconfigure
 ## 项目结构
+├── cfg/
+│   └── PID.cfg               # 动态调参配置文件
+├── launch/
+│   └── jetbot.launch         # ROS 启动文件
+├── msg/
+│   └── LineError.msg         # 自定义消息
 ├── scripts/
 │   ├── camera_publisher.py   # 摄像头驱动节点
 │   ├── line_detector.py      # 图像处理节点
 │   └── pid_controller.py     # PID 控制节点
-├── launch/
-│   └── line_follower.launch  # ROS 启动文件
-├── cfg/
-│   └── PID.cfg               # 动态调参配置文件
+├── CMakeLists.txt
+├── package.xml
 └── README.md
