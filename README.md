@@ -18,7 +18,7 @@
 ## 软件依赖
 - **系统**: Ubuntu 18.04 LTS
 - **ROS**: Melodic
-- **Python**: 2.7python
+- **Python**: 2.7
 - **核心库**: OpenCV 4.1.1, Adafruit_MotorHAT, rospy
 
 ## 使用方法
